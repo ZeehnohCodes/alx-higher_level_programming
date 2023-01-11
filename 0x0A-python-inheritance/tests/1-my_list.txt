@@ -2,7 +2,7 @@ Test for 1-my_list.py
 -------------------------------------------
 
 case 0: import
->>> MyList = _import_('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 >>>
 -------------------------------------------
 
@@ -26,7 +26,7 @@ case 1: common case
 
 case 2: not defined object
 
->>> MyList = _import_('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 >>> my_list2.print_sorted()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -92,7 +92,7 @@ AttributeError: 'list' object has no attribute 'print_sorted'
 
 case 8: negative numbers
 
->>> MyList = _import_('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 >>> my_list.append(5)
 >>> my_list.append(1)
